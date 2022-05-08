@@ -2,9 +2,11 @@ pipeline {
   agent any
   stages {
     stage ('Anisble Run Playbook') {
-      ansiblePlaybook (
-       simple.yml
-      )
+      steps {
+        ansiblePlaybook (
+        simple.yml
+        )
+      }  
     }
   }
 }
