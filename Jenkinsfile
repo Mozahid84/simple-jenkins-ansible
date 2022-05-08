@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Anisble Run Playbook') {
       steps {
-        ansiblePlaybook simple.yml
+        ansiblePlaybook playbook: 'simple.yml'
       }  
     }
   }
