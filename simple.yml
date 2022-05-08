@@ -10,5 +10,5 @@
       register: username_on_the_host
     
     - name: Display the User name
-      ansible.builtin.dedug:
+      ansible.builtin.debug:
         msg: "Hello User {{ user_on_the_host.stdout }} from Jenkins and Ansible!!"
