@@ -2,7 +2,7 @@
 
 - name: Run the test playbook
   gather_facts: false
-  hosts: 'all'
+  hosts: 'localhost'
   tasks:
     - name: Get the username running this playbook
       become: false
